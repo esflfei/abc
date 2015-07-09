@@ -1,5 +1,4 @@
 int[] x={6,58,46,15,86,20,3,13,56,19,75,18,64,24,48,14};
-int time;
 int temp;
 int i=1;
 int p=0;
@@ -37,5 +36,6 @@ void paint(){
   for(int p=0;p<16;p++){
       rect(50*p,0,50,10*x[p]);    
   }
-  delay(150);
+  int time = millis();
+  while(millis() - time <=150){}
 }
